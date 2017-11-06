@@ -1,18 +1,43 @@
 <html>
 	<head>
-		<title>Clock</title>	
+		<title>Calculator</title>	
+
+		<script type="text/javascript" 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
-		<script src="Clock.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js"></script>
+
+		<script src="Calculator.js"></script>
+		<script src="Frac.js"></script>
+		<script src="Formula.js"></script>
 	</head>
 	
 	<body>
 		<a href="https://robertchenkfc.github.io/RobertChenKFCSite/ProgrammingProjects/ProgrammingProjects.html">Back to Programming Projects</a>
 
-		<div id="sketch"></div>
-		
-		<p>
-			This is just a simple analog clock created with p5.js. You can view the code <a href="https://github.com/RobertChenKFC/RobertChenKFCSite/tree/bf1b4a010a9190b258db6c0ad6e7928dcb34d17d/ProgrammingProjects/Clock">here</a>.
-		</p>
+		<div>
+			<strong>Input:</strong> <input id="input"></input> 
+		</div>	
+
+		<div>
+			<strong>Error:</strong> <div id="error">Nothing</div>
+		</div>
+
+		<div>
+			<strong>Formula:</strong> <div id="formula">$ $</div>
+		</div>	  
+
+		<div>
+			<strong>Result:</strong> <div id="result">$0$</div>
+		</div>	  
+
+		<div>
+			<strong>Approximation:</strong> <div id="approx">$0$</div>
+		</div>
 	</body>
 </html>
