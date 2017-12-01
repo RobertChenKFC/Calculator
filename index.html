@@ -1,43 +1,36 @@
-<html>
-	<head>
-		<title>Calculator</title>	
+<script type="text/javascript" 
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
 
-		<script type="text/javascript" 
-			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-		</script>
-		<script type="text/x-mathjax-config">
-			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-		</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js"></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js"></script>
+<script src="Calculator.js"></script>
+<script src="Frac.js"></script>
+<script src="Formula.js"></script>
+<script src="Root.js"></script>
+<script src="Real.js"></script>
 
-		<script src="Calculator.js"></script>
-		<script src="Frac.js"></script>
-		<script src="Formula.js"></script>
-	</head>
+<div>
+	<strong>Input:</strong> <input id="input"></input> 
+</div>	
+
+<div>
+	<strong>Error:</strong> <div id="error">Nothing</div>
+</div>
+
+<div>
+	<strong>Formula:</strong> <div id="formula">$ $</div>
+</div>	  
+
+<div>
+	<strong>Result:</strong> <div id="result">$0$</div>
+</div>	  
+
+<div>
+	<strong>Approximation:</strong> <div id="approx">$0$</div>
+</div>
 	
-	<body>
-		<a href="https://robertchenkfc.github.io/RobertChenKFCSite/ProgrammingProjects/ProgrammingProjects.html">Back to Programming Projects</a>
-
-		<div>
-			<strong>Input:</strong> <input id="input"></input> 
-		</div>	
-
-		<div>
-			<strong>Error:</strong> <div id="error">Nothing</div>
-		</div>
-
-		<div>
-			<strong>Formula:</strong> <div id="formula">$ $</div>
-		</div>	  
-
-		<div>
-			<strong>Result:</strong> <div id="result">$0$</div>
-		</div>	  
-
-		<div>
-			<strong>Approximation:</strong> <div id="approx">$0$</div>
-		</div>
-	</body>
-</html>
